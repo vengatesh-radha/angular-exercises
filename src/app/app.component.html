@@ -1,0 +1,12 @@
+<div>
+  <form [formGroup]="login">
+   Email: <input formControlName="email"/>
+   <button (click)="submitlogin()">login</button>
+  </form>
+</div>
+  <button (click)="getUser()">submit</button>
+
+<router-outlet></router-outlet>
+<hello [users]="users" (sendData)="getData($event)"></hello>
+
+
