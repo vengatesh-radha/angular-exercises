@@ -10,7 +10,7 @@ import { ViewChildComponent } from './view-child.component';
 import { ChildViewsComponent } from './child-views.component';
 import { UserPipe } from './user.pipe';
 import { UserNavigationDirective } from './user.directive';
-
+import { CurrentPipeImpComponent } from './currency-pipe.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { ApiHttpInterceptor } from '../services/http-interceptor';
@@ -30,7 +30,8 @@ import { ApiHttpInterceptor } from '../services/http-interceptor';
     UserPipe,
     UserNavigationDirective,
     ViewChildComponent,
-    ChildViewsComponent
+    ChildViewsComponent,
+    CurrentPipeImpComponent,
   ],
   bootstrap: [AppComponent],
   providers: [
