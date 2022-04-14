@@ -6,6 +6,8 @@ import { AppRouting } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { UserComponent } from './user.component';
+import { ViewChildComponent } from './view-child.component';
+import { ChildViewsComponent } from './child-views.component';
 import { UserPipe } from './user.pipe';
 import { UserNavigationDirective } from './user.directive';
 
@@ -27,6 +29,8 @@ import { ApiHttpInterceptor } from '../services/http-interceptor';
     UserComponent,
     UserPipe,
     UserNavigationDirective,
+    ViewChildComponent,
+    ChildViewsComponent
   ],
   bootstrap: [AppComponent],
   providers: [
