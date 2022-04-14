@@ -31,7 +31,9 @@ export class AppComponent implements OnInit {
         this.users = res;
         console.log(this.users);
       },
-      (err) => {}
+      (err) => {
+        
+      }
     );
   }
 

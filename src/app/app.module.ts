@@ -9,7 +9,9 @@ import { UserComponent } from './user.component';
 import { UserPipe } from './user.pipe';
 import { UserNavigationDirective } from './user.directive';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+
+import { ApiHttpInterceptor } from '../services/http-interceptor';
 
 @NgModule({
   imports: [
@@ -27,5 +29,12 @@ import { HttpClientModule } from '@angular/common/http';
     UserNavigationDirective,
   ],
   bootstrap: [AppComponent],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ApiHttpInterceptor,
+      multi: true,
+    },
+  ],
 })
 export class AppModule {}
