@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
     this.login = this.formbuilder.group({
       email: ['', Validators.required],
     });
+    this.getUser();
   }
 
   public getUser() {

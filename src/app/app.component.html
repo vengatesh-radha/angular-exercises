@@ -14,10 +14,14 @@
     </form>
   </div>
 </div> -->
-<app-currency></app-currency>
-<a [routerLink]="['viewChild']">Vieddw Child</a>
-<br />
-<button (click)="getUser()">Call GitHinub APU</button>
+<!-- <app-currency></app-currency> -->
+<!-- <a [routerLink]="['viewChild']">Vieddw Child</a> -->
+<!-- <br /> -->
+<!-- <button (click)="getUser()">Call GitHinub APU</button> -->
 
 <router-outlet></router-outlet>
-<hello [users]="users" (sendData)="getData($event)"></hello>
+<!-- <hello [users]="users" (sendData)="getData($event)"></hello> -->
+
+<div ngFor="let user of users">
+  <p>{{ user?.id }}</p>
+</div>
