@@ -22,6 +22,6 @@
 <router-outlet></router-outlet>
 <!-- <hello [users]="users" (sendData)="getData($event)"></hello> -->
 
-<div ngFor="let user of users">
+<div *ngFor="let user of users">
   <p>{{ user?.id }}</p>
 </div>
